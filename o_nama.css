@@ -1,0 +1,40 @@
+/* Gradient transparent - color - transparent */
+body{
+    background: url(slike/814wPcHlFqL._AC_SY550_.jpg) no-repeat fixed center;
+    
+}
+
+hr.style1 {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+hr.style2 { 
+    background: url('slike/images.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 35px;
+    border: 0;
+    position: relative;
+    
+}
+hr.style2:before,
+hr.style2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 2px;
+    top: 8px;
+}
+hr.style2:before {
+    left: 0;
+    right: 55%;
+    margin-right: 10px;
+}
+hr.style2:after {
+    right: 0;
+    left: 55%;
+    margin-left: 10px;
+}
