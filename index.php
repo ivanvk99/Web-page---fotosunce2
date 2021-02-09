@@ -1,11 +1,12 @@
+<?php
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Foto sunce</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -13,8 +14,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="footer.css" > 
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="style.css"  type="text/css">
 </head>
+
+
 <body>
 
     
@@ -58,25 +63,10 @@
           </a>
       </div>
 
-      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <a href="#" class="navbar-brand">FotoSunce
-          <img src="slike/images.png" height="28" alt="FotoSunce">
-      </a>
+    <?php
+    include("navbar.php");
+    ?>
 
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-              <a href="#" class="nav-item nav-link active">Početna</a>
-              <a href="o_nama.html" class="nav-item nav-link">O nama</a>
-              <a href="nase_usluge.html" class="nav-item nav-link">Naše usluge</a>
-          </div>
-          <div class="navbar-nav ml-auto">
-              <a href="#" class="nav-item nav-link">Login</a>
-              <a href="#" class="nav-item nav-link">Register</a>
-          </div>
-      </div>
-      
-      
-  </nav>
   <br></br>
  
       <div class="container-fluid text-center">
