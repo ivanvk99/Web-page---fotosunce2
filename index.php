@@ -1,6 +1,4 @@
-<?php
-session_start(); 
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +18,7 @@ session_start();
 </head>
 
 
-<body>
+<body style="background-image: url('slike/section_bg1.png');">
 
     
     <div id="preloder">
@@ -69,19 +67,18 @@ session_start();
 
   <br></br>
  
-      <div class="container-fluid text-center">
+ <div class="container-fluid text-center" >
         <div class="row">
           <div class="col-sm-12">
             <h2>Foto Sunce</h2>
             <h4>Kreireamo uspomene</h4>
             <p>S vama još od 1994. god.</p>
-           <!--Ovdje dodati instagram i fejs-->
           </div>
         </div>
       </div>
 
  <br></br>
- <br></br>
+
 
 
 
@@ -92,7 +89,7 @@ session_start();
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="services-item">
                   <img src="services/service-2.jpg" alt="">
-                  <h3>Shooting</h3>
+                  <h3>Snimanje</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
               </div>
@@ -100,7 +97,7 @@ session_start();
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="services-item">
                   <img src="services/service-1.jpg" alt="">
-                  <h3>Videos</h3>
+                  <h3>Slikanje</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
               </div>
@@ -108,7 +105,7 @@ session_start();
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="services-item">
                   <img src="services/service-3.jpg" alt="">
-                  <h3>Editing</h3>
+                  <h3>Uređivanje</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                       magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
               </div>
@@ -118,9 +115,9 @@ session_start();
 </section>
 
 
- <div class="container">
+ <div class="container" >
   <div class="center">
-    <div class="button">Galerija</div>
+    <a href="galerija.php" class="button" >Galerija</a>
   </div>
 </div>
  
@@ -137,74 +134,9 @@ session_start();
 <!--DODATI BUTTON ZA PITANJA-->
 
 
-<footer class="container-fluid bg-grey py-5">
-  <div class="container">
-     <div class="row">
-        <div class="col-md-6">
-           <div class="row">
-              <div class="col-md-6 ">
-                 <div class="logo-part">
-                    <h3>Foto Sunce</h3>
-                    <br></br>
-                    <p>J.J. Strossmayera 102, vl. Ivanka Popic</p>
-                    <br></br>
-                    <p>RADNO VRIJEME:</p>
-                    <p>pon-pet: 8:00-16:00</p>
-                    <p>sub: 8:00-13:00</p>
-                 </div>
-              </div>
-              <div class="col-md-6 px-4">
-                 <h6> O nama</h6>
-                 <p>Na usluzi vama od 1994. god., trenutno u Vukovaru.</p>
-                 <a href="#" class="btn-footer"> More Info </a><br>
-                 <a href="#" class="btn-footer"> Contact Us</a>
-              </div>
-           </div>
-        </div>
-        <div class="col-md-6">
-           <div class="row">
-              <div class="col-md-6 px-4">
-                 <h6> Pomoc </h6>
-                 <div class="row ">
-                    <div class="col-md-6">
-                       <ul>
-                          <li> <a href="#"> Home</a> </li>
-                          <li> <a href="#"> About</a> </li>
-                       </ul>
-                    </div>
-                    <div class="col-md-6 px-4">
-                       <ul>
-                          <li> <a href="#"> Galerija</a> </li>
-                          <li> <a href="#"> FAQ</a> </li>
-                       </ul>
-                    </div>
-                 </div>
-                 
-              </div>
-              <div class="col-md-6 ">
-                 <h6> Social</h6>
-                 <div class="social">
-                    <a href="https://hr-hr.facebook.com/fotosunce"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/fotosunce/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                 </div>
-                 <br></br>
-                 <p>Uvijek nam se mozete javiti i putem mreza..</p>
-                 <br></br>
-                 <p> <em>Kontakt telefon: 0981386398</em></p>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-  <div class="Timestamp">
-    &copy;
-    <span id="copyright">
-        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-    </span>
-    Foto Sunce. All rights reserved
-</div>
-</footer>
- 
+<?php
+include("footer.php");
+?>
 
 
 

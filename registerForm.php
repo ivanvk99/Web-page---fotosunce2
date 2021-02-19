@@ -23,24 +23,56 @@ include("navbar.php");
 ?>
       
 <div class="container">
+<div class="row justify-content-center">
+<div class="col-md-4 align-items-center">
         <h2>Registracija</h2><br>
         <form action="register.php" method="post" name="register">
             <div class="form-group">
-                <label for="uname">Username:</label>
+              <label for="email"> Email:</label> 
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
                 <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
             </div>
             <div class="form-group">
-                <label for="pwd">Password:</label>
+                <label for="pasword">Password:</label>
                 <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
             </div>
-            <button type="submit" class="btn btn-primary" name="login">Submit</button><br><br>
-            <p> Nemaš račun? <a href="registracija.php" class="mr-5 ">Registriraj se</a></p>
+            <div class="form-group">
+                <label for="rptpwd">Repeat password:</label>
+                <input type="password" class="form-control" id="rptpwd" placeholder="Repeat password" name="password" required>
+            <span id = "rptcheck"><span> 
+            </div> 
+
+            <button id="submit" type = "submit" class="btn-block btn-primary" disabled name="login">Submit</button><br><br>
+            <p> Imaš već račun? <a href="loginForm.php" class="mr-5 ">Ulogiraj se</a></p>
             
         
         </form>
-</div> 
+</div>
+</div>
 
-      
+</div> 
+<script>
+
+
+let check = document.getElementById("rptcheck");
+let submit = document.getElementById("submit");
+
+
+$('#password, #rptpwd').on('keyup', function () {
+    
+  if ($('#password').val() == $('#rptpwd').val()) {
+    submit.disabled = false;
+  } else {
+      submit.disabled = true;
+  }
+});
+</script>
+<?php
+include("footer.php");
+?>
 
 <body>
 </html>

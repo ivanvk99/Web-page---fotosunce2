@@ -1,0 +1,39 @@
+.services-option {
+	padding-bottom: 50px;
+}
+
+.so-item {
+	margin-bottom: 42px;
+}
+
+.so-item .so-title {
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.so-item .so-title .so-number {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 600;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: #009603;
+	float: left;
+	margin-right: 20px;
+}
+
+.so-item .so-title h5 {
+	font-size: 20px;
+	color: #111111;
+	font-weight: 700;
+	text-transform: uppercase;
+	overflow: hidden;
+	line-height: 36px;
+}
+
+.so-item p {
+	color: #666666;
+	margin-bottom: 0;
+}

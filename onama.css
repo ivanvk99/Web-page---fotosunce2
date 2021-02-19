@@ -11,7 +11,7 @@ hr.style1 {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 hr.style2 { 
-    background: url('slike/images.png') no-repeat top center;
+    background: url('slike/png.png') no-repeat top center;
     background-size: contain;
     display: block;
     height: 35px;

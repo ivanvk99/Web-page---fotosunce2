@@ -20,7 +20,9 @@
 include("navbar.php");
 ?>
       
-<div class="container">
+      <div class="container">
+<div class="row justify-content-center">
+<div class="col-md-4 align-items-center">
         <h2>Prijava</h2><br>
         <form action="login.php" method="post" name="login">
             <div class="form-group">
@@ -32,13 +34,16 @@ include("navbar.php");
                 <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
             </div>
             <button type="submit" class="btn btn-primary" name="login">Submit</button><br><br>
-            <p> Nemaš račun? <a href="registracija.php" class="mr-5 ">Registriraj se</a></p>
+            <p> Nemaš račun? <a href="registerForm.php" class="mr-5 ">Registriraj se</a></p>
             
         
         </form>
 </div> 
-
-      
+</div>
+      </div>
+<?php
+include("footer.php");
+?>
 
 <body>
 </html>

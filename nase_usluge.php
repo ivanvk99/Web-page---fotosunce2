@@ -14,223 +14,156 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="footer.css" rel="stylesheet">
-  
-  <link href="nase_usluge.css" rel="stylesheet">
+  <link href="naseusluge.css" rel="stylesheet">
+  <link href="kosarica.css" rel="stylesheet">
+  <script src="store.js" async></script>
 
 </head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <a href="index.html" class="navbar-brand">FotoSunce
-          <img src="slike/images.png" height="28" alt="FotoSunce">
-      </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link active">Početna</a>
-              <a href="o_nama.html" class="nav-item nav-link">O nama</a>
-              <a href="#" class="nav-item nav-link">Naše usluge</a>
-          </div>
-          <div class="navbar-nav ml-auto">
-              <a href="#" class="nav-item nav-link">Login</a>
-              <a href="#" class="nav-item nav-link">Register</a>
-          </div>
-      </div>
-      
-      
-  </nav>
+<body style="background-image: url('slike/section_bg1.png');">
+
+
+<?php
+include("navbar.php");
+?>
 
 
 
-  <section class="our_service padding_top">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section_tittle">
-                    <p>our service</p>
-                    <h2>what we offer</h2>
+
+<div class="slider-area2 ">
+            <!-- Mobile Menu -->
+            <div class="single-slider slider-height2  hero-overly d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap">
+                                <h2>Naše usluge</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="single_offer_text text-center wedding">
-                    <span class="flaticon-love-and-romance"></span>
-                    <h4>wedding photography</h4>
-                    <p>World the end of summer the sweltering heat makes human
-                        sweat in the night and man plants and trees wilt even</p>
-                    
-                </div>
-                <div class="single_offer_img d-none d-md-block">
-                    <img src="slike/preuzmi.jpg" alt="">
+    <!-- End Hero -->
+    <br></br>
+<br></br>
+    <!--? Pricing Card Start -->
+    <section class="pricing-card-area section-padding30">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-tittle mb-60 text-center">
+                        <h2>Odaberite program</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis 
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-6">
-                <div class="single_offer_img d-none d-md-block">
-                    <img src="slike/foto_sunce4.jpg" alt="">
+            <br></br>
+<br></br>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <div class="single-card text-center mb-30">
+                    <div class="shop-item">
+                        <div class="card-top">
+                            <img src="slike/png.png" width="100" height="100" alt="">
+                            <h4>Silver</h4>
+                            <p></p>
+                        </div>
+                        <div class="card-mid">
+                            <h4>$500.00</h4>
+                        </div>
+                        <div class="card-bottom">
+                            <ul>
+                                <li>5 sati rada</li>
+                                <li>Samo fotografiranje</li>
+                                <li>Svaki dodatni sat 50$</li>
+                                <li>Obrada svih slika u lightroom-u</li>
+                                <li>Lokacija isključivo po vašoj želji</li>
+                            </ul>
+                            <button class="border-btn get-btn shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="single_offer_text text-center nature">
-                    <span class="flaticon-leaf"></span>
-                    <h4>Nature photography</h4>
-                    <p>that the monsoon clouds are soon coming, there is a
-                        strange silence in the ears, the sky gets darker and
-                        darker, the flash of lightning illuminates the dark
-                        skies all time needs band the sound of thunder fills the heart with fear.</p>
-                    
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <div class="single-card text-center mb-30">
+                        <!-- stiker -->
+                        <div class="stiker">
+                            <span>Most Popular</span>
+                        </div>
+                        <div class="shop-item">
+                        <div class="card-top">
+                        <img src="slike/png.png" width="100" height="100" alt="">
+                            <h4>Gold</h4>
+                            <p></p>
+                        </div>
+                        <div class="card-mid">
+                            <h4>$1000.00</h4>
+                        </div>
+                        <div class="card-bottom">
+                            <ul>
+                                <li>Od početka do kraja vjenčanja</li>
+                                <li>Slikanje i snimanje</li>
+                                <li>Obrada fotografija i videa</li>
+                                <li>Rok od mjesec dana</li>
+                                <li>Pozivnice uključene</li>
+                            </ul>
+                            <button class="border-btn get-btn shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <div class="single-card text-center mb-30">
+                    <div class="shop-item">
+                        <div class="card-top">
+                        <img src="slike/png.png" width="100" height="100" alt="">
+                            <h4>Platinum</h4>
+                            <p></p>
+                        </div>
+                        <div class="card-mid">
+                            <h4>$1500.00</h4>
+                        </div>
+                        <div class="card-bottom">
+                            <ul>
+                                <li>Od početka do kraja vjenčanja</li>
+                                <li>Dron uključen u cijenu</li>
+                                <li>PhotoBook gratis</li>
+                                <li>Obrada u manje od mjesec dana</li>
+                                <li>Pozivnice uključene</li>
+                            </ul>
+                            <button class="border-btn get-btn shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--::our_service part end::-->
-
-<!--::pricing part start::-->
-<section class="pricing_part section_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section_tittle">
-                    <p>Price table</p>
-                    <h2>pricing plan</h2>
-                </div>
+    </section>
+    <br></br>
+<br></br>
+    <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-6">
-                <div class="single_pricing_part">
-                    <div class="pricing_tittle">
-                        <p>Standard</p>
-                    </div>
-                    <div class="pricing_content">
-                        <h3>$50.00 <span>/ mo</span></h3>
-                        <ul>
-                            <li>2GB Bandwidth</li>
-                            <li>Two Account</li>
-                            <li>15GB Storage</li>
-                            <li>Sale After Service</li>
-                            <li>3 Host Domain</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a href="#" class="btn_2">book Now</a>
-                    </div>
-                </div>
+            <div class="cart-items">
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single_pricing_part">
-                    <div class="pricing_tittle">
-                        <img src="img/icon/feature_icon_2.svg" alt="">
-                        <p>Standard</p>
-                    </div>
-                    <div class="pricing_content">
-                        <h3>$50.00 <span>/ mo</span></h3>
-                        <ul>
-                            <li>2GB Bandwidth</li>
-                            <li>Two Account</li>
-                            <li>15GB Storage</li>
-                            <li>Sale After Service</li>
-                            <li>3 Host Domain</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a href="#" class="btn_2">book Now</a>
-                    </div>
-                </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single_pricing_part">
-                    <div class="pricing_tittle">
-                        <img src="img/icon/feature_icon_3.svg" alt="">
-                        <p>Standard</p>
-                    </div>
-                    <div class="pricing_content">
-                        <h3>$50.00 <span>/ mo</span></h3>
-                        <ul>
-                            <li>2GB Bandwidth</li>
-                            <li>Two Account</li>
-                            <li>15GB Storage</li>
-                            <li>Sale After Service</li>
-                            <li>3 Host Domain</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a href="#" class="btn_2">book Now</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+            <button class="btn btn-primary btn-purchase " type="button">PURCHASE</button>
+        </section>
 
 
+<?php
+include("footer.php");
+?>
 
-
-
-  <footer class="container-fluid bg-grey py-5">
-    <div class="container">
-       <div class="row">
-          <div class="col-md-6">
-             <div class="row">
-                <div class="col-md-6 ">
-                   <div class="logo-part">
-                      <h3>Foto Sunce</h3>
-                      <br></br>
-                      <p>J.J. Strossmayera 102, vl. Ivanka Popic</p>
-                      <br></br>
-                      <p>RADNO VRIJEME:</p>
-                      <p>pon-pet: 8:00-16:00</p>
-                      <p>sub: 8:00-13:00</p>
-                   </div>
-                </div>
-                <div class="col-md-6 px-4">
-                   <h6> O nama</h6>
-                   <p>Na usluzi vama od 1994. god., trenutno u Vukovaru.</p>
-                   <a href="index.html" class="btn-footer"> More Info </a><br>
-                   <a href="pitanja.html" class="btn-footer"> Contact Us</a>
-                </div>
-             </div>
-          </div>
-          <div class="col-md-6">
-             <div class="row">
-                <div class="col-md-6 px-4">
-                   <h6> Pomoc </h6>
-                   <div class="row ">
-                      <div class="col-md-6">
-                         <ul>
-                            <li> <a href="index.html"> Home</a> </li>
-                            <li> <a href="o_nama.html"> About</a> </li>
-                         </ul>
-                      </div>
-                      <div class="col-md-6 px-4">
-                         <ul>
-                            <li> <a href="#"> Galerija</a> </li>
-                            <li> <a href="#"> FAQ</a> </li>
-                         </ul>
-                      </div>
-                   </div>
-                   
-                </div>
-                <div class="col-md-6 ">
-                   <h6> Social</h6>
-                   <div class="social">
-                      <a href="https://hr-hr.facebook.com/fotosunce"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                      <a href="https://www.instagram.com/fotosunce/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                   </div>
-                   <br></br>
-                   <p>Uvijek nam se mozete javiti i putem mreza..</p>
-                   <br></br>
-                   <p> <em>Kontakt telefon: 0981386398</em></p>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <div class="Timestamp">
-      &copy;
-      <span id="copyright">
-          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-      </span>
-      Foto Sunce. All rights reserved
-  </div>
-  </footer>
+ 
 </body>
+</html>
